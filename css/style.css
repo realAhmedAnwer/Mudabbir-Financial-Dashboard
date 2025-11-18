@@ -1,0 +1,325 @@
+/* Start Global */
+:root {
+  --color-red-100: oklch(93.6% 0.032 17.717);
+  --color-red-500: oklch(63.7% 0.237 25.331);
+  --color-red-600: oklch(57.7% 0.245 27.325);
+  --color-red-800: oklch(44.4% 0.177 26.899);
+  --color-orange-100: oklch(95.4% 0.038 75.164);
+  --color-orange-500: oklch(70.5% 0.213 47.604);
+  --color-orange-600: oklch(64.6% 0.222 41.116);
+  --color-orange-800: oklch(47% 0.157 37.304);
+  --color-yellow-100: oklch(97.3% 0.071 103.193);
+  --color-yellow-600: oklch(68.1% 0.162 75.834);
+  --color-yellow-800: oklch(47.6% 0.114 61.907);
+  --color-green-50: oklch(98.2% 0.018 155.826);
+  --color-green-100: oklch(96.2% 0.044 156.743);
+  --color-green-400: oklch(79.2% 0.209 151.711);
+  --color-green-500: oklch(72.3% 0.219 149.579);
+  --color-green-600: oklch(62.7% 0.194 149.214);
+  --color-green-700: oklch(52.7% 0.154 150.069);
+  --color-green-800: oklch(44.8% 0.119 151.328);
+  --color-emerald-100: oklch(95% 0.052 163.051);
+  --color-emerald-600: oklch(59.6% 0.145 163.225);
+  --color-emerald-800: oklch(43.2% 0.095 166.913);
+  --color-cyan-100: oklch(95.6% 0.045 203.388);
+  --color-cyan-600: oklch(60.9% 0.126 221.723);
+  --color-cyan-800: oklch(45% 0.085 224.283);
+  --color-blue-50: oklch(97% 0.014 254.604);
+  --color-blue-100: oklch(93.2% 0.032 255.585);
+  --color-blue-500: oklch(62.3% 0.214 259.815);
+  --color-blue-600: oklch(54.6% 0.245 262.881);
+  --color-blue-700: oklch(48.8% 0.243 264.376);
+  --color-blue-800: oklch(42.4% 0.199 265.638);
+  --color-blue-900: oklch(37.9% 0.146 265.522);
+  --color-indigo-50: oklch(96.2% 0.018 272.314);
+  --color-indigo-100: oklch(93% 0.034 272.788);
+  --color-indigo-500: oklch(58.5% 0.233 277.117);
+  --color-indigo-600: oklch(51.1% 0.262 276.966);
+  --color-indigo-700: oklch(45.7% 0.24 277.023);
+  --color-indigo-800: oklch(39.8% 0.195 277.366);
+  --color-purple-100: oklch(94.6% 0.033 307.174);
+  --color-purple-500: oklch(62.7% 0.265 303.9);
+  --color-purple-600: oklch(55.8% 0.288 302.321);
+  --color-purple-800: oklch(43.8% 0.218 303.724);
+  --color-pink-100: oklch(94.8% 0.028 342.258);
+  --color-pink-500: oklch(65.6% 0.241 354.308);
+  --color-pink-600: oklch(59.2% 0.249 0.584);
+  --color-rose-700: oklch(51.4% 0.222 16.935);
+  --color-gray-50: oklch(98.5% 0.002 247.839);
+  --color-gray-100: oklch(96.7% 0.003 264.542);
+  --color-gray-200: oklch(92.8% 0.006 264.531);
+  --color-gray-300: oklch(87.2% 0.01 258.338);
+  --color-gray-500: oklch(55.1% 0.027 264.364);
+  --color-gray-600: oklch(44.6% 0.03 256.802);
+  --color-gray-700: oklch(37.3% 0.034 259.733);
+  --color-gray-900: oklch(21% 0.034 264.665);
+  --color-white: #fff;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: calc(1 / 0.75);
+  --text-sm: 0.875rem;
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-base: 1rem;
+  --text-base--line-height: 1.5;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 1.2;
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --default-transition-duration: 0.15s;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --color-brand-accent-blue: #3b82f6;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background: #f8fafc;
+  font-family: IBM Plex Sans Arabic, sans-serif;
+  font-weight: 600;
+}
+/* End Global */
+/* Start Global Classes */
+.container {
+  width: 92%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+}
+.shadow-md {
+  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+}
+.shadow-sm {
+  box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+.text-2xl {
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+}
+
+.text-3xl {
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+
+.text-4xl {
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+}
+
+.text-base {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
+}
+
+.font-bold {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+
+.font-medium {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+}
+.text-gray-300 {
+  color: var(--color-gray-300);
+}
+
+.text-gray-500 {
+  color: var(--color-gray-500);
+}
+
+.text-gray-600 {
+  color: var(--color-gray-600);
+}
+
+.text-gray-700 {
+  color: var(--color-gray-700);
+}
+
+.text-gray-900 {
+  color: var(--color-gray-900);
+}
+
+.text-blue-100 {
+  color: var(--color-blue-100);
+}
+
+.text-blue-600 {
+  color: var(--color-blue-600);
+}
+
+.text-blue-700 {
+  color: var(--color-blue-700);
+}
+
+.text-blue-800 {
+  color: var(--color-blue-800);
+}
+
+.text-blue-900 {
+  color: var(--color-blue-900);
+}
+.text-green-400 {
+  color: var(--color-green-400);
+}
+/* Start Flex */
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-1 {
+  gap: calc(0.25rem * 1);
+}
+.gap-2 {
+  gap: calc(0.25rem * 2);
+}
+.gap-3 {
+  gap: calc(0.25rem * 3);
+}
+.gap-4 {
+  gap: calc(0.25rem * 4);
+}
+/* End Flex */
+/* End Global Classes */
+/* START MAIN SECTION */
+main {
+  margin-right: 16rem;
+  padding: 2rem;
+  height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+/* END   MAIN SECTION */
+/* START GRID SYSTEM */
+.test {
+  width: 100%;
+  min-height: 50px;
+  background-color: red;
+}
+main .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "SummaryCards SummaryCards SummaryCards"
+    "Notifications Transactions Transactions"
+    "Bills Transactions Transactions"
+    "Budget Analysis Payments"
+    "Budget Summary Payments";
+  gap: 1rem;
+}
+main .grid-container .summary-cards {
+  grid-area: SummaryCards;
+}
+main .grid-container .notifications {
+  grid-area: Notifications;
+}
+main .grid-container .bills {
+  grid-area: Bills;
+}
+main .grid-container .transactions {
+  grid-area: Transactions;
+}
+main .grid-container .budget {
+  grid-area: Budget;
+}
+main .grid-container .analysis {
+  grid-area: Analysis;
+}
+main .grid-container .summary {
+  grid-area: Summary;
+}
+main .grid-container .payments {
+  grid-area: Payments;
+}
+main .grid-container .grid-section {
+  padding: 1.5rem;
+  border: 1px solid var(--color-gray-200);
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+main .grid-container .grid-section > .title {
+  margin-block-end: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .grid-container .grid-section > .title h3 {
+  font-size: var(--text-lg);
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+}
+main .grid-container .grid-section > .title .showmore {
+  cursor: pointer;
+  font-size: var(--text-sm);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-600);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+main .grid-container .grid-section .title > .showmore:hover {
+  color: var(--color-gray-900);
+}
+main .grid-container .grid-section .title > .showmore .icon {
+  font-size: var(--text-xs);
+}
+/* END   GRID SYSTEM */

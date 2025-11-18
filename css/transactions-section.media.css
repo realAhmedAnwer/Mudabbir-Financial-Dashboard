@@ -1,0 +1,23 @@
+@media (0 <= width < 768px) {
+  .transactions table thead tr th {
+    font-size: 0.75rem;
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    padding: 0.5rem 0.25rem;
+  }
+  .transactions table tbody tr td {
+    padding: 0.5rem 0.25rem;
+  }
+  .transactions table tbody tr td.by .content .name {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.75rem;
+  }
+  .transactions table tbody tr td.date {
+    font-size: 0.75rem;
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .transactions table tbody tr td.amount {
+    font-size: 0.75rem;
+  }
+}

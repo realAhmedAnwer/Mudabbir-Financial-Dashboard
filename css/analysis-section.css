@@ -1,0 +1,47 @@
+.analysis .chart .income {
+  background-color: #10b981;
+}
+.analysis .chart .expense {
+  background-color: #ef4444;
+}
+.analysis .chart .legend {
+  margin-block-end: 1rem;
+}
+.analysis .chart .legend .item {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+.analysis .chart .legend .item .icon {
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+}
+.analysis .chart .groups {
+  position: relative;
+  padding: 1rem 0;
+}
+.analysis .chart .groups .group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin: 0 0.25rem;
+}
+.analysis .chart .groups .group .bars {
+  height: 160px;
+  gap: 2px;
+}
+.analysis .chart .groups .group .bars div {
+  border-radius: 3px 3px 0 0;
+  width: 16px;
+  transition: opacity 0.3s ease;
+}
+.analysis .chart .groups .group .bars div:hover {
+  opacity: 0.8;
+}
+.analysis .chart .groups .group .label {
+  color: #64748b;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}

@@ -1,0 +1,102 @@
+.sidebar {
+  width: 16rem;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #9ca3af4d transparent;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sidebar .logo {  
+  margin-block-end: 2rem;
+}
+.sidebar .logo .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #fff;
+  background-image: linear-gradient(
+    to right bottom,
+    oklch(0.546 0.245 262.881) 0%,
+    oklch(0.457 0.24 277.023) 100%
+  );
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px #2b7fff33, 0 4px 6px -4px #2b7fff33;
+}
+.sidebar .logo .icon i {
+  line-height: 0;
+}
+.sidebar .logo .h1 {
+  margin-block-end: 0.25rem;
+}
+.sidebar nav ul li {
+  margin-block-end: 0.5rem;
+}
+.sidebar nav ul li a {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+}
+.sidebar nav ul li a:hover {
+  background-color: #f5f5f5;
+}
+.sidebar nav ul li a.active {
+  color: var(--color-blue-700);
+  background-color: var(--color-blue-50) !important;
+  border: 1px solid var(--color-blue-100) !important;
+}
+.sidebar .quick-actions {
+  margin-block-start: 2rem;
+}
+.sidebar .quick-actions h3 {
+  padding-inline: 2rem;
+  margin-block-end: 1rem;
+}
+.sidebar .quick-actions .buttons button {
+  width: 100%;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  margin-block-end: 0.75rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.sidebar .quick-actions .buttons button:hover {
+  background-color: #00000005;
+  transform: translate(2px);
+}
+.sidebar .quick-actions .buttons button .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+.sidebar .quick-actions .buttons button.blue .icon {
+  background-color: #2b7fff1a;
+  color: oklch(0.546 0.245 262.881);
+}
+.sidebar .quick-actions .buttons button.blue:hover .icon {
+  background-color: oklab(0.623 -0.0378409 -0.210628 / 0.15);
+}
+.sidebar .quick-actions .buttons button.green .icon {
+  background-color: #00c9511a;
+  color: oklch(0.627 0.194 149.214);
+}
+.sidebar .quick-actions .buttons button.green:hover .icon {
+  background-color: oklab(0.723 -0.18885 0.110891 / 0.15);
+}
+.sidebar .quick-actions .buttons button.violet .icon {
+  background-color: #ad46ff1a;
+  color: oklch(0.558 0.288 302.321);
+}
+.sidebar .quick-actions .buttons button.violet:hover .icon {
+  background-color: oklab(0.627 0.147802 -0.219953 / 0.15);
+}
+.sidebar .quick-actions .buttons button.red .icon {
+  background-color: #ff69001a;
+  color: oklch(0.646 0.222 41.116);
+}
+.sidebar .quick-actions .buttons button.red:hover .icon {
+  background-color: oklab(0.705 0.143615 0.157301 / 0.15);
+}

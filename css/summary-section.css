@@ -1,0 +1,27 @@
+.summary .accounts .account {
+  padding: 1rem;
+  background-color: var(--color-gray-50);
+  border: 1px solid var(--color-gray-100);
+  border-radius: 0.75rem;
+  margin-block-end: 1rem;
+}
+.summary .accounts .account .start .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+.summary .accounts .account.blue .start .icon {
+  color: var(--color-blue-600);
+  background-color: var(--color-blue-100);
+}
+.summary .accounts .account.green .start .icon {
+  color: var(--color-green-600);
+  background-color: var(--color-green-100);
+}
+.summary .accounts .account.purple .start .icon {
+  color: var(--color-purple-600);
+  background-color: var(--color-purple-100);
+}
+.summary .accounts .account.purple .end p {
+  color: var(--color-red-600);
+}

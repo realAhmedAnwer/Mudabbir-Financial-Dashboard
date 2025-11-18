@@ -1,0 +1,65 @@
+@media (0 <= width < 768px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  main {
+    margin-right: 0;
+    padding: 1rem;
+  }
+  main .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+      "SummaryCards "
+      "Notifications"
+      "Transactions"
+      "Bills"
+      "Budget"
+      "Analysis"
+      "Summary"
+      "Payments";
+  }
+  main .grid-container .grid-section .title {
+    margin-block-end: 1rem;
+  }
+}
+@media (768px <= width < 1024px) {
+  html {
+    font-size: 16px;
+  }
+  main {
+    margin-right: 4rem;
+  }
+  main .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "SummaryCards SummaryCards "
+      "Notifications Analysis"
+      "Transactions Transactions"
+      "Bills Summary"
+      "Budget Payments";
+  }
+}
+@media (1024px <= width < 1280px) {
+  html {
+    font-size: 16px;
+  }
+  main {
+    margin-right: 4rem;
+  }
+  main .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "SummaryCards SummaryCards "
+      "Notifications Analysis"
+      "Transactions Transactions"
+      "Bills Summary"
+      "Budget Payments";
+  }
+}

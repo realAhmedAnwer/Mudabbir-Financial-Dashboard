@@ -1,0 +1,123 @@
+.transactions {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f3f4f6;
+}
+.transactions table {
+  width: 100%;
+  min-width: 600px;
+}
+.transactions table thead tr {
+  border-block-end: 1px solid var(--color-gray-100);
+}
+.transactions table thead tr th {
+  text-align: start;
+  padding: 0.75rem 0.5rem;
+}
+.transactions table tbody tr td {
+  padding: 1rem 0.5rem;
+}
+.transactions table tbody tr td.by .image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.transactions table tbody tr td.by .image img {
+  width: 100%;
+}
+.transactions table tbody tr td.by .image.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transactions table tbody tr td.category .badge {
+  padding: 0.125rem 0.625rem;
+  border-radius: 20px;
+}
+.transactions table tbody tr td.category .badge i {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-inline-end: 0.25rem;
+}
+.transactions table tbody tr td.status span {
+  padding: 0.125rem 0.625rem;
+  border-radius: 20px;
+}
+/* START COLORS */
+.transactions table tbody tr td.amount.positive {
+  color: var(--color-green-600);
+}
+.transactions table tbody tr td.status.completed span {
+  background-color: var(--color-green-100);
+  color: var(--color-green-800);
+}
+.transactions table tbody tr td.status.uncompleted span {
+  background-color: var(--color-yellow-100);
+  color: var(--color-yellow-800);
+}
+.transactions table tbody tr.green td.by .image.icon {
+  color: var(--color-green-600);
+  background-color: var(--color-green-100);
+}
+.transactions table tbody tr.green td.category .badge {
+  color: var(--color-green-800);
+  background-color: var(--color-green-100);
+}
+.transactions table tbody tr.orange td.by .image.icon {
+  color: var(--color-orange-600);
+  background-color: var(--color-orange-100);
+}
+.transactions table tbody tr.orange td.category .badge {
+  color: var(--color-orange-800);
+  background-color: var(--color-orange-100);
+}
+.transactions table tbody tr.blue td.by .image.icon {
+  color: var(--color-blue-600);
+  background-color: var(--color-blue-100);
+}
+.transactions table tbody tr.blue td.category .badge {
+  color: var(--color-blue-800);
+  background-color: var(--color-blue-100);
+}
+.transactions table tbody tr.purple td.by .image.icon {
+  color: var(--color-purple-600);
+  background-color: var(--color-purple-100);
+}
+.transactions table tbody tr.purple td.category .badge {
+  color: var(--color-purple-800);
+  background-color: var(--color-purple-100);
+}
+.transactions table tbody tr.red td.by .image.icon {
+  color: var(--color-red-600);
+  background-color: var(--color-red-100);
+}
+.transactions table tbody tr.red td.category .badge {
+  color: var(--color-red-800);
+  background-color: var(--color-red-100);
+}
+.transactions table tbody tr.indigo td.by .image.icon {
+  color: var(--color-indigo-600);
+  background-color: var(--color-indigo-100);
+}
+.transactions table tbody tr.indigo td.category .badge {
+  color: var(--color-indigo-800);
+  background-color: var(--color-indigo-100);
+}
+.transactions table tbody tr.cyan td.by .image.icon {
+  color: var(--color-cyan-600);
+  background-color: var(--color-cyan-100);
+}
+.transactions table tbody tr.cyan td.category .badge {
+  color: var(--color-cyan-800);
+  background-color: var(--color-cyan-100);
+}
+.transactions table tbody tr.emerald td.by .image.icon {
+  color: var(--color-emerald-600);
+  background-color: var(--color-emerald-100);
+}
+.transactions table tbody tr.emerald td.category .badge {
+  color: var(--color-emerald-800);
+  background-color: var(--color-emerald-100);
+}
+/* END   COLORS */

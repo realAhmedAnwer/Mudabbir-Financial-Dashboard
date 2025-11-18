@@ -1,0 +1,114 @@
+.budget .progress-bar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--color-gray-200);
+  border-radius: 15px;
+}
+.budget .progress-bar .progress {
+  height: 0.5rem;
+  background-color: var(--color-gray-200);
+  border-radius: 15px;
+}
+.budget .summary {
+  padding: 1rem;
+  background: linear-gradient(90deg, #eff6ff, #eef2ff);
+  border: 1px solid var(--color-blue-100);
+  border-radius: 0.75rem;
+  margin-block-end: 1.5rem;
+}
+.budget .summary .total p:first-child {
+  color: var(--color-blue-600);
+}
+.budget .summary .total p:last-child {
+  color: var(--color-blue-900);
+}
+.budget .summary .remain p:last-child {
+  color: var(--color-green-600);
+}
+.budget .summary .used {
+  margin-block: 0.75rem 0.25rem;
+}
+.budget .summary .progress-bar .progress {
+  width: 82.5%;
+  background: linear-gradient(
+    90deg,
+    var(--color-blue-500),
+    var(--color-indigo-500)
+  );
+}
+.budget .items .item {
+  background: #f9fafb80;
+  border: 1px solid #e5e7ebcc;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  margin-block-end: 1rem;
+}
+.budget .items .item:hover {
+  background: #f3f4f6cc;
+  border-color: #d1d5dbe6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px #0000000f;
+}
+.budget .items .item .profile .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+.budget .items .item .flex {
+  margin-block-end: 0.5rem;
+}
+.budget .items .item .amount .used .badge {
+  padding: 0.125rem 0.5rem;
+  border-radius: 20px;
+}
+/* START COLORS */
+.budget .items .item.orange .profile .icon {
+  color: var(--color-orange-600);
+  background-color: var(--color-orange-100);
+}
+.budget .items .item.orange .amount .used .badge {
+  color: #166534;
+  background-color: #dcfce7;
+}
+.budget .items .item.orange .progress-bar .progress {
+  width: 50%;
+  background-color: var(--color-orange-500);
+}
+.budget .items .item.red .profile .icon {
+  color: var(--color-red-600);
+  background-color: var(--color-red-100);
+}
+.budget .items .item.red .amount .used .badge {
+  color: #991b1b;
+  background-color: #fee2e2;
+}
+.budget .items .item.red .progress-bar .progress {
+  width: 100%;
+  background-color: var(--color-red-500);
+}
+.budget .items .item.pink .profile .icon {
+  color: var(--color-pink-600);
+  background-color: var(--color-pink-100);
+}
+.budget .items .item.pink .amount .used .badge {
+  color: #92400e;
+  background-color: #fef3c7;
+}
+.budget .items .item.pink .progress-bar .progress {
+  width: 80%;
+  background-color: var(--color-pink-500);
+}
+.budget .items .item.green .profile .icon {
+  color: var(--color-green-600);
+  background-color: var(--color-green-100);
+}
+.budget .items .item.green .amount .used .badge {
+  color: #166534;
+  background-color: #dcfce7;
+}
+.budget .items .item.green .progress-bar .progress {
+  width: 86%;
+  background-color: var(--color-green-500);
+}
+/* END   COLORS */
